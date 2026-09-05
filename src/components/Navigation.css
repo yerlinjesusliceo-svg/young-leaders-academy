@@ -1,0 +1,121 @@
+.navbar {
+  background: linear-gradient(90deg, var(--primary) 0%, #7BC5E8 100%);
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.logo-icon {
+  font-size: 28px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-item {
+  display: flex;
+}
+
+.nav-link {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: none;
+}
+
+.btn-inscribirse {
+  background-color: var(--primary-dark);
+  color: var(--secondary);
+  padding: 10px 20px;
+  border: 2px solid var(--primary-dark);
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.btn-inscribirse:hover {
+  background-color: var(--text);
+  color: var(--secondary);
+}
+
+.btn-technical {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 2px solid var(--text);
+  color: var(--text);
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-technical:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-logout {
+  background-color: #FF6B6B;
+  color: var(--secondary);
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.btn-logout:hover {
+  background-color: #FF5252;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-menu {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .nav-logo {
+    font-size: 20px;
+  }
+
+  .nav-link {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+}
